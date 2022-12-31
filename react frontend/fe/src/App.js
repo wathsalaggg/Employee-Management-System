@@ -6,12 +6,14 @@ import FooterComponent from './components/FooterComponent';
 
 function App() {
   return (
-    <><><div className="container">
+    
+    <><><div>
+      <HeaderComponent />
 
-      <ListEmployeeComponent />
+    </div><div className="container">
 
-    </div><div>
-        <HeaderComponent />
+        <ListEmployeeComponent />
+
       </div></><div>
         <FooterComponent />
       </div></>

@@ -14,10 +14,10 @@ class HeaderComponent extends Component {
         return (
             <div>
                <header> 
-                <nav className='navbar navbar.expand.md navbar.dark bg.dark'> 
+                <nav className='navbar navbar-expand-md navbar-dark bg-dark'> 
 
 <div> 
-    <a href='https://github.com/wathsalaggg' className='navbar.brand' > Employee Management App</a>
+    <a href='https://github.com/wathsalaggg' className='navbar-brand' > Employee Management App</a>
 </div>
                 </nav>
                 </header> 
