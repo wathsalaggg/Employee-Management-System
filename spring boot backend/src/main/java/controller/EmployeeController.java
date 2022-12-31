@@ -2,10 +2,7 @@ package controller;
 
 import model.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import repository.EmployeeRepository;
 
 import java.util.List;
@@ -24,6 +21,14 @@ public class EmployeeController {
 
         return employeeRepository.findAll();
 
+
+    }
+
+    //create employee rest API
+    @PostMapping("/employees")
+    public Employee createEmployee(@RequestBody Employee employee) {
+
+        return employeeRepository.save(employee);
 
     }
 }

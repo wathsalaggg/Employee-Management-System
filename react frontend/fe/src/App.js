@@ -13,6 +13,8 @@ function App() {
     <div>
 
       <Router> 
+      <HeaderComponent />
+
         <div className='container'> 
 
 <switch> http://localhost:3000/employees
@@ -24,16 +26,15 @@ function App() {
    <ListEmployeeComponent/> 
 </switch>
 
-      <HeaderComponent />
+      
 
-    </div><div className="container">
+    </div>
+    
 
-        <ListEmployeeComponent />
-
-      </div>
-      <div>
+        
+      
         <FooterComponent />
-</div>
+
 
         </Router> 
       </div>
